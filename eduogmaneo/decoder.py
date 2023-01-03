@@ -1,8 +1,17 @@
+# ----------------------------------------------------------------------------
+#  EduOgmaNeo
+#  Copyright(c) 2023 Ogma Intelligent Systems Corp. All rights reserved.
+#
+#  This copy of EduOgmaNeo is licensed to you under the terms described
+#  in the EDUOGMANEO_LICENSE.md file included in this distribution.
+# ----------------------------------------------------------------------------
+
 import numpy as np 
 from copy import copy
 
 from .helpers import columnWiseOneHot, sigmoid
 
+# Simple regression-type decoder
 class Decoder:
     def __init__(self, num_input_columns, input_column_size, num_hidden_columns, hidden_column_size):
         # Dimensions

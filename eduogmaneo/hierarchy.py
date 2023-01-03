@@ -1,3 +1,11 @@
+# ----------------------------------------------------------------------------
+#  EduOgmaNeo
+#  Copyright(c) 2023 Ogma Intelligent Systems Corp. All rights reserved.
+#
+#  This copy of EduOgmaNeo is licensed to you under the terms described
+#  in the EDUOGMANEO_LICENSE.md file included in this distribution.
+# ----------------------------------------------------------------------------
+
 import numpy as np 
 
 from .encoder import Encoder
@@ -61,15 +69,16 @@ class Hierarchy:
 
         updates = len(self.encoders) * [ False ]
 
-        # Up pass
+        # Up pass - activate encoders with EM
         for l in range(len(self.encoders)):
             if l == 0 or self.ticks[l] >= self.layer_descs[l].ticks_per_update:
-                self.ticks[l] = 0
+                self.ticks[l] = 0 # Reset tick
 
                 updates[l] = True
 
                 self.encoders[l].step(np.concatenate(self.histories[l]), learn_enabled)
 
+                # Add state to next higher layer's history buffer (if it exists) and tick it
                 if l < len(self.encoders) - 1:
                     self.histories[l + 1].insert(0, copy(self.encoders[l].hidden_state))
                     self.histories[l + 1].pop()

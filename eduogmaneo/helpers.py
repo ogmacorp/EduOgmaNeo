@@ -1,3 +1,11 @@
+# ----------------------------------------------------------------------------
+#  EduOgmaNeo
+#  Copyright(c) 2023 Ogma Intelligent Systems Corp. All rights reserved.
+#
+#  This copy of EduOgmaNeo is licensed to you under the terms described
+#  in the EDUOGMANEO_LICENSE.md file included in this distribution.
+# ----------------------------------------------------------------------------
+
 import numpy as np
 
 # Sparsify per-column
