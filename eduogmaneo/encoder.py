@@ -49,7 +49,7 @@ class Encoder:
             error = input_state - recon_dense
 
             # If sparse reconstruction doesn't match input, update that reconstruction (per-input-column)
-            # We do this here in Pythgn by getting the full error and zeroing out parts of the error where the reconstruction matches the input
+            # We do this here in Python by getting the full error and zeroing out parts of the error where the reconstruction matches the input
             for i in range(self.num_input_columns):
                 column_slice = slice(i * self.input_column_size, (i + 1) * self.input_column_size)
 

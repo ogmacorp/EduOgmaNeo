@@ -18,7 +18,7 @@ For real-world usage, please use [AOgmaNeo](https://github.com/ogmacorp/AOgmaNeo
 
 ## License and Copyright
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />The work in this repository is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. See the  [AOGMANEO_LICENSE.md](./AOGMANEO_LICENSE.md) and [LICENSE.md](./LICENSE.md) file for further information.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />The work in this repository is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. See the  [EDUOGMANEO_LICENSE.md](./EDUOGMANEO_LICENSE.md) and [LICENSE.md](./LICENSE.md) file for further information.
 
 Contact Ogma via licenses@ogmacorp.com to discuss commercial use and licensing options.
 
